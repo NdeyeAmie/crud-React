@@ -19,7 +19,7 @@ function InputForm({ refreshUsers,  modifUsers, setModifUsers , setUsers}) {
         e.preventDefault();
     
         if (!prenomInput || !nomInput || !emailInput || !telephoneInput) {
-            toast.success("Veuillez remplir tous les champs.");
+           alert("Veuillez remplir tous les champs.");
             return;
         }
     
