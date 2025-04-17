@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { collection , addDoc } from 'firebase/firestore';
-import { db } from './FirebaseConfig';
-import { updateUserInFirebase } from './services/FirebaseService'; 
+import { db } from '../services/FirebaseConfig.js';
+import { updateUserInFirebase } from '../services/FirebaseService.js'; 
 import { toast } from 'react-toastify';
 import { serverTimestamp } from 'firebase/firestore';
 
