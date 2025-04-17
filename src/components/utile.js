@@ -1,6 +1,6 @@
 // utils.js
 import { getDocs, collection, updateDoc, doc } from 'firebase/firestore';
-import { db } from './firebaseConfig';
+import { db } from './FirebaseConfig';
 
 export const addCreatedAtToExistingUsers = async () => {
   const usersCollectionRef = collection(db, "users");
