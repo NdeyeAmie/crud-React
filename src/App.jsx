@@ -1,7 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.min.js";
 import "react-toastify/dist/ReactToastify.css";
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Header from './components/Header';
 import "./App.css"
 import HeaderFireBase from "./components/HeaderFireBase";

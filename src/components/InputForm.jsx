@@ -38,7 +38,6 @@ function InputForm({ refreshUsers,  modifUsers, setModifUsers , setUsers}) {
                 console.log(newUser);
                 
             } else {
-                // await addDoc(collection(db, "users"), newUser);
                 const docRef = await addDoc(collection(db, "users"), newUser);
                const userWithId = { id: docRef.id, ...newUser };
                 setUsers(prevUsers => [userWithId, ...prevUsers]);
