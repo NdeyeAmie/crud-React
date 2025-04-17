@@ -111,8 +111,12 @@ function InputForm({ refreshUsers,  modifUsers, setModifUsers , setUsers}) {
                     <input type='number' className="form-control" name='telephoneInput' id="telephoneInput"
                      value={telephoneInput} 
                      onChange={(e) => {
-                      setTelephoneInput(e.target.value)    
-                     }}/>
+                    const value = e.target.value
+                    if(/^\d{0,9}$/.test(value)){
+                        setTelephoneInput(value)    
+                    }
+                     }}
+                     />
                 </div>
             </div>
             {modifUsers == null ? (

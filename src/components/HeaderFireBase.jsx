@@ -87,7 +87,7 @@ return (
       <div className="row justify-content-center">
           <div className="col-md-6">
          <div className='search' >
-          <input className=" w-100" type="search" placeholder="Search..."
+          <input className=" w-100" type="search" placeholder="Recherche..."
            value={searchTerme}
            onChange={(e) => setSearchTerme(e.target.value)}/>
           <i className="fa-solid fa-magnifying-glass"></i>
@@ -189,13 +189,13 @@ return (
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">Détails de l'utilisateur</h5>
-                <button
+                {/* <button
                   type="button"
                   className="close"
                   onClick={handleCloseModal}
                 >
                   <span>&times;</span>
-                </button>
+                </button> */}
               </div>
               <div className="modal-body">
                 <p><strong>Prénom :</strong> {selectedUser.prenomInput}</p>
@@ -223,7 +223,7 @@ return (
           <ul className="pagination justify-content-center">
             <li className={`page-item ${pageActuel === 1 ? "disabled" : ""}`}>
               <button className="page-link" onClick={() => setPageActuel(pageActuel - 1)}>
-                Previous
+                Avant
               </button>
             </li>
             {Array.from({ length: totalPages }, (_, i) => (
@@ -238,7 +238,7 @@ return (
             ))}
             <li className={`page-item ${pageActuel === totalPages ? "disabled" : ""}`}>
               <button className="page-link" onClick={() => setPageActuel(pageActuel + 1)}>
-                Next
+                Apres
               </button>
             </li>
           </ul>
