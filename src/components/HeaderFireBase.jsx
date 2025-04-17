@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllUsers , deleteUserFromFirebase  } from "./FirebaseService";
+import { getAllUsers , deleteUserFromFirebase  } from "./services/FirebaseService";
 import InputForm from "./InputForm";
 import { toast } from 'react-toastify';
 import { addCreatedAtToExistingUsers } from "./utile";

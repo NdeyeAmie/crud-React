@@ -1,4 +1,4 @@
-import { db } from "./FirebaseConfig";
+import { db } from "../FirebaseConfig.js";
 import { collection, addDoc, getDocs, deleteDoc, doc, updateDoc , query , orderBy } from "firebase/firestore";
 
 const usersCollectionRef = collection(db, "users");
