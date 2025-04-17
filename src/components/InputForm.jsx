@@ -22,6 +22,12 @@ function InputForm({ refreshUsers,  modifUsers, setModifUsers , setUsers}) {
            alert("Veuillez remplir tous les champs.");
             return;
         }
+
+        if (telephoneInput.length !== 9) {
+            toast.error("Le numéro de téléphone doit contenir 9 chiffres.");
+            return;
+          }
+          
     
         const newUser = {
             prenomInput,
@@ -107,7 +113,7 @@ function InputForm({ refreshUsers,  modifUsers, setModifUsers , setUsers}) {
                 </div>
                 <div className="ms-sm-3">
                     <label  className="form-label">Telephone</label>
-                    <input type='number' className="form-control" name='telephoneInput' id="telephoneInput"
+                    <input type='text' className="form-control" name='telephoneInput' id="telephoneInput"
                      value={telephoneInput} 
                      onChange={(e) => {
                     const value = e.target.value
